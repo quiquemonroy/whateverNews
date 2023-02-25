@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>open.blog(whateverNews)</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+  <div>
+  <a title="home" href="/"><img class = imagenTitle src="/static/images/titulo.png"/></a>
+  </div>
+  </header>
+  
+  <div class="btn_menu">
+  <div>
+<button onclick= "location.href='/borrarpost1'">borrar post 1</button>  <button onclick= "location.href='/borrarpost2'">borrar post 2</button> <button onclick= "location.href='/borrarpost3'">borrar post 3</button>
+</div>
+  <div>
+  <button onclick= "location.href='/newpost'">newpost</button>
+  <button onclick= "location.href='/logout'">logout</button>
+  <button onclick= "location.href='/'">home</button>
+  <button onclick= "location.href='/change'">cambiar contraseña</button>
+  </div>
+  </div>
+  <div class="post_view">
+    <div>
+    {content}
+  </div>
+  </div>
+ 
+</body>
+{footer}
+</html>

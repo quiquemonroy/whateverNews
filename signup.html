@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>open.blog(whateverNews)</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+  <div>
+  <a title="home" href="/"><img class = imagenTitle src="/static/images/titulo.png"/></a>
+  </div>
+  </header>
+  <div class="post_view">
+  <form method="post" action="/succes">
+    <p>username: <input type="text" name="username" required> </p>
+    <p>email: <input type="Email" name="email" required> </p>
+    <p>password: <input type="password" name="password" required> </p>
+    <p>retype password: <input type="password" name="password_check" required> </p>
+    <p><input type="hidden" name="userID" value="232"> </p>
+     <button type="submit">Sign up</button>
+  </form>
+  </div>
+</body>
+{footer}
+</html>

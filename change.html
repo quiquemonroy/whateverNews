@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>open.blog(whateverNews)</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+  <div>
+  <a title="home" href="/"><img class = imagenTitle src="/static/images/titulo.png"/></a>
+  </div>
+  </header>
+<div class="post_view">
+<form method="post" action="/changePass">
+  
+  <p>username: <input type="text" name="username" required></p>
+  <p>email: <input type="email" name="email" required></p>
+  <p>new password: <input type="password" name="newPassword" required></p><p>again: <input type="password" name="newPassword_check"></p>
+  
+  <button type="submit">change password</button>
+</form>
+</div>
+{footer}

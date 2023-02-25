@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>open.blog(whateverNews)</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <header>
+  <div>
+  <a title="home" href="/"><img class = imagenTitle src="/static/images/titulo.png"/></a>
+  </div>
+  </header>
+  <div class="post">
+  <h3 class = title> {fecha} _{titulo} </h3><br />
+<img src="/static/blog/images/{img}"/>
+  
+  <br />
+  <p>
+     {post}
+  </p>
+  <div>
+    <div>
+      <h3>COMENTA</h3>
+      <p>  AQUÍ VAN LOS COMENTARIOS!!! NO SÉ CÓMO PONERLOS.</p>
+    </div>
+  <div>
+    <form method="post" action="/addcomment" enctype="multipart/form-data" >
+    <p>Nombre: <input type="text" name="nombre" required>
+    email: <input type="email" name="email"> </p>
+     <p><textarea  name="comment" rows="10" cols="50" required></textarea> </p>
+<button type="submit">enviar</button>
+    </form>
+  </div>
+  </div>
+  <button onclick= "location.href='/{prev}'">prev</button> 
+    <button onclick= "location.href='/{next}'">next</button><br />
+    <button class="login" onclick= "location.href='/login'">login</button>
+ </div>
+</body>
+
+</html>
